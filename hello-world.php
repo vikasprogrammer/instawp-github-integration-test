@@ -7,7 +7,7 @@
  * Plugin Name: InstaWP Github Integration Demo 
  * Plugin URI: https://instawp.io
  * Description: A plugin to greet the visitors or just another test plugin to be honest.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Vikas Singhal
  * Author URI: https://instawp.io
  * License: GPLv2 or later
@@ -46,7 +46,7 @@ class HelloWorld_Plugin {
 
 	function congratulations() {
 
-		echo "<!--Congratulations, you have just learned basics OOP and Plugin Development using Object Oriented Programming.-->";
+		//echo "<!--Congratulations, you have just learned basics OOP and Plugin Development using Object Oriented Programming.-->";
 
 	}
 
