@@ -4,16 +4,16 @@
  *
  * @package hello-world
  *
- * Plugin Name: Hello World
- * Plugin URI: https://www.ashiish.me/
+ * Plugin Name: InstaWP Github Integration Demo 
+ * Plugin URI: https://instawp.io
  * Description: A plugin to greet the visitors or just another test plugin to be honest.
  * Version: 1.0.0
- * Author: Ashish Yadav
- * Author URI: https://www.ashiish.me/
+ * Author: Vikas Singhal
+ * Author URI: https://instawp.io
  * License: GPLv2 or later
  * Text Domain: hello-world
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * 
+ * GitHub Plugin URI: vikasprogrammer/instwp-github-integration-test
  */
 
 if(!defined('ABSPATH')) {
