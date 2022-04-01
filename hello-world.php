@@ -4,10 +4,10 @@
  *
  * @package hello-world
  *
- * Plugin Name: InstaWP Github Integration Demo 
+ * Plugin Name: InstaWP Github Integration Demo v5 demo
  * Plugin URI: https://instawp.io
  * Description: A plugin to greet the visitors or just another test plugin to be honest.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Vikas Singhal
  * Author URI: https://instawp.io
  * License: GPLv2 or later
