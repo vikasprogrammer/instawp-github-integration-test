@@ -46,7 +46,7 @@ class HelloWorld_Plugin {
 
 	function congratulations() {
 
-		echo "<!--Congratulations, you have just learned basics OOP and Plugin Development using Object Oriented Programming.-->";
+		echo "<!-- 1.0.2 Congratulations, you have just learned basics OOP and Plugin Development using Object Oriented Programming.-->";
 
 	}
 
