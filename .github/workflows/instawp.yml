@@ -1,0 +1,13 @@
+name: InstaWP WordPress Testing
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: instawp/wordpress-testing-automation@master
+        with:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
