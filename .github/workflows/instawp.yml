@@ -5,9 +5,9 @@ on:
     types: [opened]
 
 jobs:
-  test:
+  create-wp-for-testing:
     runs-on: ubuntu-latest
     steps:
-      - uses: instawp/wordpress-testing-automation@master
+      - uses: instawp/wordpress-testing-automation@v1
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
