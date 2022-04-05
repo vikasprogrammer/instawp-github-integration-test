@@ -7,7 +7,7 @@
  * Plugin Name: InstaWP Github Integration Demo 
  * Plugin URI: https://instawp.io
  * Description: A plugin to greet the visitors or just another test plugin to be honest.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Vikas Singhal
  * Author URI: https://instawp.io
  * License: GPLv2 or later
