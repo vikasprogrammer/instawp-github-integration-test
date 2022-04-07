@@ -8,7 +8,7 @@
  * Plugin URI: https://instawp.io
  * Description: A plugin to greet the visitors or just another test plugin to be honest.
  * Version: 1.0.4
- * Author: Vikas Singhal
+ * Author: Vikas Singhal PR
  * Author URI: https://instawp.io
  * License: GPLv2 or later
  * Text Domain: hello-world
