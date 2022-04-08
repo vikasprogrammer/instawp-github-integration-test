@@ -12,5 +12,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           INSTAWP_TOKEN: ${{secrets.INSTAWP_TOKEN}}
-          INSTAWP_TEMPLATE_SLUG: gitdemo
+          INSTAWP_TEMPLATE_SLUG: gitdemolax
           REPO_ID: 4
