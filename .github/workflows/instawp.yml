@@ -9,8 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: instawp/wordpress-testing-automation@main
+        id: instawp
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           INSTAWP_TOKEN: ${{secrets.INSTAWP_TOKEN}}
           INSTAWP_TEMPLATE_SLUG: gitdemotemplate
           REPO_ID: 3
+      - run: echo URL ${{ steps.instawp.outputs.instawp_url }}
+        shell: bash
