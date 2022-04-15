@@ -2,18 +2,37 @@ name: InstaWP WordPress Testing
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, closed, merged]
 
 jobs:
   create-wp-for-testing:
     runs-on: ubuntu-latest
     steps:
       - uses: instawp/wordpress-testing-automation@main
-        id: instawp
+        if: github.event.pull_request.opened == true
+        id: create-wp
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           INSTAWP_TOKEN: ${{secrets.INSTAWP_TOKEN}}
+          INSTAWP_DOMAIN: ${{secrets.INSTAWP_DOMAIN}}
           INSTAWP_TEMPLATE_SLUG: gitdemotemplate
           REPO_ID: 3
-      - run: echo URL ${{ steps.instawp.outputs.instawp_url }}
+          INSTAWP_ACTION: create-site-template
+      - run: echo URL ${{ steps.create-wp.outputs.instawp_url }}
         shell: bash
+
+  destroy-wp-after-testing:
+    runs-on: ubuntu-latest
+      steps:
+        - uses: instawp/wordpress-testing-automation@main
+          if: github.event.pull_request.merged == true || github.event.pull_request.closed == true
+          id: detroy-wp
+          with:
+            GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+            INSTAWP_TOKEN: ${{secrets.INSTAWP_TOKEN}}
+            INSTAWP_DOMAIN: ${{secrets.INSTAWP_DOMAIN}}
+            INSTAWP_TEMPLATE_SLUG: gitdemotemplate
+            REPO_ID: 3
+            INSTAWP_ACTION: destroy-site
+
+
