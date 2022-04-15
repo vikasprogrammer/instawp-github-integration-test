@@ -35,6 +35,7 @@ class HelloWorld_Plugin {
 	 * It initializes our object.
 	 * Call your function inside Consrtuctor to execute immediately.
 	 * Use $this for the reference of an object
+	 
 	 */
 
 	function __construct() {
