@@ -18,6 +18,7 @@ jobs:
           INSTAWP_TEMPLATE_SLUG: gitdemo
           REPO_ID: 4
           INSTAWP_ACTION: create-site-template
+          ARTIFACT_URL: https://downloads.wordpress.org/plugin/quiz-master-next.7.3.14.zip
       - run: echo URL ${{ steps.create-wp.outputs.instawp_url }}
         shell: bash
         
