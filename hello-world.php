@@ -29,7 +29,7 @@ if(!defined('ABSPATH')) {
 
 class HelloWorld_Plugin {
 
-	/*
+	/* 
 	 * Consructors are magical functions
 	 * They are executed when you instantiate a object.
 	 * It initializes our object.
