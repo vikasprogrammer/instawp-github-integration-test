@@ -19,6 +19,7 @@ jobs:
           REPO_ID: 2
           INSTAWP_ACTION: create-site-template
       - run: echo URL ${{ steps.create-wp.outputs.instawp_url }}
+            echo URL ${{ steps.create-wp.outputs.iwp_wp_username }}
         shell: bash
         
   destroy-wp-after-testing:
