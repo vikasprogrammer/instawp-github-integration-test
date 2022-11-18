@@ -39,6 +39,7 @@ class HelloWorld_Plugin {
 
 	function __construct() {
 		// executes our congratulations function.
+		//adding a new line of comment ;-)
 		$this->congratulations();
 	}
 
