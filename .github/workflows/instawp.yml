@@ -18,6 +18,8 @@ jobs:
           INSTAWP_TEMPLATE_SLUG: githubtest
           REPO_ID: 2
           INSTAWP_ACTION: create-site-template
+          ARTIFACT_URL: https://github.com/InstaWP/instawp-connect/archive/refs/heads/main.zip
+          
       - run: echo URL ${{ steps.create-wp.outputs.iwp_wp_username }}
         shell: bash
         
