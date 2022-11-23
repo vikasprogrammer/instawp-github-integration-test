@@ -1,4 +1,4 @@
-name: InstaWP WordPress Testing
+name: InstaWP WordPress Testing1
 
 on:
   pull_request:
