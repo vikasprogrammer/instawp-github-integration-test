@@ -7,7 +7,7 @@
  * Plugin Name: InstaWP Hello World Demo
  * Plugin URI: https://instawp.io
  * Description: A plugin to greet the visitors or just another test plugin to be honest.
- * Version: 1.2.2
+ * Version: 1.2.3
  * Author: Vikas Singhal
  * Author URI: https://instawp.io
  * License: GPLv2 or later
@@ -40,5 +40,5 @@ function hello_world_admin_menu() {
 }
 
 function display_hello_world_page() {
-  echo '<h1>Hello World. 123</h1>';
+  echo '<h1>Hello World. </h1>';
 }
