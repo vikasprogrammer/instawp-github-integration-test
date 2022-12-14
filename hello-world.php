@@ -40,5 +40,5 @@ function hello_world_admin_menu() {
 }
 
 function display_hello_world_page() {
-  echo '<h1>Hello World. Last Try 112</h1>';
+  echo '<h1>Hello World. Last Final Try 112</h1>';
 }
