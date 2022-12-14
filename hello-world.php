@@ -40,5 +40,5 @@ function hello_world_admin_menu() {
 }
 
 function display_hello_world_page() {
-  echo '<h1>Hello World. 3333333</h1>';
+  echo '<h1>Hello World. 666666</h1>';
 }
