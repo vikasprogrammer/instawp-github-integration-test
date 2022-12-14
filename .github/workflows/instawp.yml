@@ -14,11 +14,9 @@ jobs:
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           INSTAWP_TOKEN: ${{secrets.INSTAWP_TOKEN}}
-          INSTAWP_DOMAIN: ${{secrets.INSTAWP_DOMAIN}}
-          INSTAWP_TEMPLATE_SLUG: githubtest
-          REPO_ID: 2
+          INSTAWP_TEMPLATE_SLUG: github-template-demo
+          REPO_ID: 3
           INSTAWP_ACTION: create-site-template
-          ARTIFACT_URL: https://github.com/InstaWP/instawp-connect/archive/refs/heads/main.zip
           
       - run: echo URL ${{ steps.create-wp.outputs.iwp_wp_username }}
         shell: bash
@@ -32,7 +30,6 @@ jobs:
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           INSTAWP_TOKEN: ${{secrets.INSTAWP_TOKEN}}
-          INSTAWP_DOMAIN: ${{secrets.INSTAWP_DOMAIN}}
-          INSTAWP_TEMPLATE_SLUG: githubtest
-          REPO_ID: 2
+          INSTAWP_TEMPLATE_SLUG: github-template-demo
+          REPO_ID: 3
           INSTAWP_ACTION: destroy-site
